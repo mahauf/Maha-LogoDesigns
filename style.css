@@ -1,0 +1,155 @@
+/* laptop view */
+
+body{
+    font-family: 'Asap', sans-serif; 
+    background-color: #ebebeb;
+    background-image: url(images/Logo\ Background.png);
+    color: white;
+      
+}
+
+header{
+    background-color: #3b3c3d;
+    min-height: 100px;
+    width: 100%;
+    position: fixed;
+    
+   
+}
+.head{
+   
+    max-width: 1024px;
+    min-height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+span{
+    font-weight: bold;
+}
+a{
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 3px;
+    padding: 7px 20px;
+    margin-left: 10px;
+}
+ .container{
+    padding-top: 150px;
+    max-width: 1024px;
+    min-height: 500px;
+    /* margin-left: auto;
+    margin-right: auto; */
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.col{
+    background-color: rgb(36, 209, 209);
+    width: 30%;
+    margin-bottom: 40px;
+
+}
+
+.hide-in-desktop{
+    display: none;
+}
+
+.col img{
+    width: 100%;
+    height: auto;
+}
+
+.col p{
+
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    padding: 20px 30px;
+}
+.col p::first-line{
+    
+    font-weight: bold;
+    
+}
+.dropdown{
+    display: none;
+}
+
+
+
+
+/* Tablet view */
+@media (max-width: 768px) {
+
+    .col{   
+        width: 45%;   
+    }
+    .hide-in-desktop{
+        display: block;
+    }
+
+    header{
+        
+        position: relative; 
+    }
+    .container{
+        padding-top: 40px;
+    }
+    .head{
+        display: block; 
+        text-align: center; 
+    }
+    nav a{
+        display: block;
+        padding: 10px 0;
+        margin-left: 0;
+    }
+    .head1{
+        padding: 30px 0;
+    }
+           
+}
+
+
+/* Mobile view */
+@media (max-width: 500px) {
+
+    .col{   
+        width: 100%;    
+    }
+    .hide-in-mbl{
+        display: none;
+
+    }
+    nav{
+        display: none;
+    }
+    .dropdown{
+        display: block;
+        
+    }
+    .head{
+        display: flex;
+        padding: 0 30px;
+    }
+    .dropdown-nav{
+        display: none;
+        position: absolute;
+        margin-left: -90px;
+        padding-top: 7px;
+        
+    }
+    .button{
+        display: block;
+        position: relative;
+        background-color: rgb(9, 226, 226);   
+    }
+
+  
+} 
